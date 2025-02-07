@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Incorrectly using innerHTML to set the content of an element with a space in its id
+    document.getElementById("my Div").innerHTML = "This text replaces the previous text."; 
+  </script>
+</body>
+</html>
